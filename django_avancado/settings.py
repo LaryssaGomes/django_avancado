@@ -135,3 +135,4 @@ EMAIL_HOST_PASSWORD = 'c4344064b6cec5'
 EMAIL_PORT = '2525'
 
 MAIL_REPLY = 'admin@user.com'
+MAIL_STOCK_BOSS = 'stock@user.com'

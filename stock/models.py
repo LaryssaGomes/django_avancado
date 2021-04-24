@@ -22,6 +22,11 @@ class Product(TimestampableMixin):
 
     def __str__(self):
         return self.name
+
+    def decrement(self, amount):
+        if self.stock - amount < 0:
+            raise ValueError("Sem estoque disponível")
+        self.stock -= amount
     '''
     @classmethod
     def increment_stock(self, sender, instance, **kwargs):
